@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  background-color: #353535;
+	font-family: 'Raleway', sans-serif;
+  max-width: 600px;
+	width: 100%;
+	text-align: center;
+	padding: 2%;
+	height: 500px;
+}
+ul,
+li {
+list-style: none;
+display: inline-block;
+}
+.header__navbar {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 62px;
+}
+
+.header__navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 32px;
+}
+
+.header__navbar ul li a {
+  color: white;
+  transition: all ease 0.5s;
+}
+
+.header__navbar ul li a:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  border-radius: 25px;
+  display: flex;
+  background-color: purple;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  width: 115px;
+}
+.log{
+  cursor: pointer;
+  opacity: 0.7;
+  border-radius: 25px;
+  display: flex;
+  background-color: blueviolet;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  width: 115px;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+@-webkit-keyframes my {
+  0% { color: #F8CD0A;  } 
+  50% { color: red;  }
+  100% { color: aqua;  } 
+} 
+@-moz-keyframes my { 
+  0% { color: #F8CD0A;  } 
+  50% { color: red;  }
+  100% { color: aqua;  } 
+} 
+@-o-keyframes my { 
+  0% { color: #F8CD0A;  } 
+  50% { color: red;  }
+  100% { color: aqua;  } 
+} 
+@keyframes my { 
+  0% { color: #F8CD0A;  } 
+  50% { color: red;  }
+  100% { color: aqua;  } 
+} 
+
+h1{
+  font-size: 50px;
+  font-style: italic;
+  font-family:'Times New Roman', Times, serif;
+  -webkit-animation: my 700ms infinite;
+  -moz-animation: my 700ms infinite; 
+  -o-animation: my 700ms infinite; 
+  animation: my 700ms infinite;
+}
+/* style login */
+.login {
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+  height: 100vh;
+  background: #353535;
+}
+.login__container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.login__container h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+.login__container form {
+  display: flex;
+  flex-direction: column;
+}
+.login__container form label {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+.login__container form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.login__container form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #333;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.login__container form button:hover {
+  background: #555;
+}
+.login__container form a {
+  text-align: center;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #333;
+}
+.login__container form a:hover {
+  color: #555;
+}
+.login__registerButton {
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: block;
+}
+
+/* style signup */
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  background: #353535;
+}
+.signup__container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.signup__container h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+.signup__container form {
+  display: flex;
+  flex-direction: column;
+}
+.signup__container form label {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+.signup__container form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.signup__container form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #333;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.signup__container form button:hover {
+  background: #555;
+}
+.signup__container form a {
+  text-align: center;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #333;
+}
+.signup__container form a:hover {
+  color: #555;
+}
+.signup__registerButton {
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: block;
+}
+h5{
+  display: flex;
+  align-items: flex-start;
+}
+
