@@ -2,10 +2,13 @@ const list = ['ADD', 'APPLE', 'ACCESS', 'APOLOGIZE', 'ASK', 'ANSWER', 'AVAILABLE
 			 'BALL', 'BIG', 'BORN', 'BICYCLE', 'BUY', 'BORN', 'BED', 'BAG', 'BASEBALL', 'BAKETBALL',
 			 'CAR', 'CAT', 'CHICKEN', 'CUT', 'CONTAIN', 'CINEMA', 'CONTROL', 'CENTER', 'COPY', 'CAMERA', 
 			 'DO', 'DIFFICULT', 'DINNER', 'DUCK', 'DANCE', 'DESTROY', 'DOWLOAD', 'DAD', 'DEVIDE', 'DISPLAY',
-			 'ENTER', 'ENGINEER', 'ENTERTAINMENT', 'ENGAGE', 'EMBARRASE', 'EMPLOYER', 'EMPLOYEE', 'ENCODE', 'EIGHT', 'ENJOY',
-			 'FOOT', 'FOOTBALL', 'FINGER', 'FISH', '', '', '', '', '', '',  
+			 'ENTER', 'ENGINEER', 'ENTERTAINMENT', 'ENGAGE', 'ZERO', 'EMPLOYER', 'EMPLOYEE', 'ENCODE', 'EIGHT', 'ENJOY',
+			 'FOOT', 'FOOTBALL', 'FINGER', 'FISH', 'SUGGEST', 'VAR', 'SUN', 'SHOOT', 'SET', 'CHAIR',
+			 'YOU', 'THUNDER', 'WIN', 'YEAR', 'WORLD', 'WORD', 'YELLOW', 'RED', 'GREEN', 'BLACK',
+			 'BLUE', 'WOMAN', 'MAN', 'TEAM', 'FLASH', 'THINK', 'TWO', 'THIRD', 'THREE', 'TIRED',
+			 'TOGETHER', 'VICTORY', 'WHERE', 'WHAT', 'WIFE', 'ZOO', 'VEGETABLE', 'WEEK', 'WAVE', 'young',
 			 'GO', 'GOOD', 'GIFT', 'GUN', 'GIN', 'GENDER', 'GENEROUS', 'GHOST', 'GOAL', 'GOAT',
-			 'ZOO'];
+			 ];
 var temp = document.querySelector('.time');
 var button = document.querySelector("button");
 var words = document.querySelector(".words");
@@ -39,7 +42,7 @@ function countdown() {
 
 function random() {
   words.innerHTML = "";
-  var random = Math.floor(Math.random() * (10)) + 0;
+  var random = Math.floor(Math.random() * (100)) + 0;
 	var wordArray = list[random].split("");
 	for (var i = 0; i < wordArray.length; i++) {
   	var span = document.createElement("span");
@@ -68,14 +71,16 @@ function typing(e) {
   		} 
   	}
   }
-  var checker = 0;
-  for (var j = 0; j < spans.length; j++) { 
-  	if (spans[j].className === "span bg") {
+var checker = 0;
+for (var j = 0; j < spans.length; j++) { 
+	if (spans[j].className === "span bg") {
   		checker++;
     }
     if (checker === spans.length) { 
-		  spark.currentTime = 0;
+	  spark.currentTime = 0;
       spark.play();
+	  words.classList.add("animated");
+  	  words.classList.add("fadeOut");
   	  points++; 
   	  scoreDiv.innerHTML = points; 
   	  document.removeEventListener("keydown", typing, false);
